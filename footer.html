@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<footer>
+    <div class="container top">
+        <img src="images/patriot head.png">
+        <div class="pages">
+            <a href="index.html">Home</a>
+            <a href="architecture.html">Architecture</a>
+            <a href="#">Autoshop</a>
+            <a href="#">Video</a>
+            <a href="#">IB Design Tech</a>
+            <a href="#">Web Design</a>
+            <a href="#">Woodshop</a>
+        </div>
+    </div>
+    <div class="container bottom">
+        <p id="copyright"></p>
+    </div>
+</footer>
+
+<style>
+
+
+footer {
+    background: var(--blue);
+    color: var(--light);
+    font-weight: bold;
+    font-family: 'Montserrat';
+    padding-top: 50px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+
+    .container.top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 200px;
+        }
+
+        .pages {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            
+            a {
+                color: var(--light);
+                text-decoration: none;
+                text-transform: uppercase;
+
+                &:hover {
+                    color: var(--navyblue);
+                }
+            }
+        }
+    }
+
+    .container.bottom {
+        p {
+            text-align: center;
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 540px) {
+    footer .container.top {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+</style>
+
+</body>
+</html>

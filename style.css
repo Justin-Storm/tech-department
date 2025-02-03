@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --navyblue: #03045e;
+    --blue: #0077b6;
+    --lightblue: #00b4d8;
+    --lightblue2: #90e0ef;
+    --lightblue3: #caf0f8;
+    --yellow: #FFEB00;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: var(--lightblue2);
+}

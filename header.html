@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <video autoplay loop muted>
+        <source src="videos/short tech dept .mp4" type="video/mp4">
+    </video>
+    <div class="overlay text-center">
+        <h1>Welcome to the FTHS<br>Tech Department!</h1>
+        <p>Explore all of our technology classes.</p>
+        <a href="#classes"><span>Explore</span></a>
+    </div>
+</header>
+
+<style>
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+
+    video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4));
+
+        h1, p {
+            color: var(--light);
+            font-weight: bold;
+            font-family: 'Montserrat';
+        }
+        a {
+            background: var(--blue);
+            color: var(--light);
+            padding: 10px 30px;
+            font-weight: bold;
+            font-family: 'Montserrat';
+            text-transform: uppercase;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+
+            span {
+                z-index: 1;
+                position: relative;
+            }
+        }
+        a::after {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: var(--navyblue);
+            top: 0;
+            left: -100%;
+            transition: 0.5s ease;
+        }
+        a:hover::after {
+            left: 0;
+        }
+    }
+}
+
+</style>
+
+</body>
+</html>
